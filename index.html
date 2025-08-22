@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <meta name="description" content="A responsive calculator built with HTML, CSS, and JavaScript">
+    <meta name="author" content="Monishraj P">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="header">
+                <h1>Simple Calculator</h1>
+            </div>
+            <div class="display">
+                <input type="text" id="result" placeholder="0" readonly>
+            </div>
+            <div class="buttons">
+                <button onclick="clearDisplay()" class="btn clear">C</button>
+                <button onclick="deleteLast()" class="btn clear">←</button>
+                <button onclick="appendToDisplay('/')" class="btn operator">÷</button>
+                <button onclick="appendToDisplay('*')" class="btn operator">×</button>
+
+                <button onclick="appendToDisplay('7')" class="btn number">7</button>
+                <button onclick="appendToDisplay('8')" class="btn number">8</button>
+                <button onclick="appendToDisplay('9')" class="btn number">9</button>
+                <button onclick="appendToDisplay('-')" class="btn operator">−</button>
+
+                <button onclick="appendToDisplay('4')" class="btn number">4</button>
+                <button onclick="appendToDisplay('5')" class="btn number">5</button>
+                <button onclick="appendToDisplay('6')" class="btn number">6</button>
+                <button onclick="appendToDisplay('+')" class="btn operator">+</button>
+
+                <button onclick="appendToDisplay('1')" class="btn number">1</button>
+                <button onclick="appendToDisplay('2')" class="btn number">2</button>
+                <button onclick="appendToDisplay('3')" class="btn number">3</button>
+                <button onclick="calculate()" class="btn equals" rowspan="2">=</button>
+
+                <button onclick="appendToDisplay('0')" class="btn number zero">0</button>
+                <button onclick="appendToDisplay('.')" class="btn number">.</button>
+            </div>
+            <div class="footer">
+                <p>Built by <a href="https://github.com/monishraj" target="_blank">Monishraj P</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
